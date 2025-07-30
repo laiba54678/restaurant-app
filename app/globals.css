@@ -117,4 +117,16 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Smooth scroll + offset for fixed navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px; /* ≈ navbar height; tweak if needed */
+}
+
+/* Optional: a slightly smaller offset on mobile */
+@media (max-width: 768px) {
+  html { scroll-padding-top: 90px; }
+}
+
 }
